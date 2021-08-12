@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+button.btn {
+	@apply bg-primary disabled:opacity-50 hover:shadow-none hover:bg-primaryHover focus:outline-none px-4 py-2 font-medium text-center text-white transition duration-500 ease-in-out rounded focus:ring-0 focus:border-transparent;
+}
